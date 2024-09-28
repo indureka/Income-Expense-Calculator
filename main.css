@@ -1,0 +1,178 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color: #3767eb;
+  }
+  
+  /* Heading */
+  h1, h2, h3 {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  h2 span, h3 span {
+    color: #000;
+  }
+  
+  /* Balance Section */
+  .balance-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .balance-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  #total-balance, #total-income, #total-expense {
+    color: #3767eb;
+  }
+  
+  /* Form Section */
+  .form-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #2eb8ee;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3767eb;
+  }
+  
+  /* Filter Section */
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  /* Transactions Section */
+  .transactions-section {
+    margin-bottom: 20px;
+  }
+  
+  #transaction-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #transaction-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  #transaction-list li button {
+    background-color: #2eb8ee;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #transaction-list li button:hover {
+    background-color: #3767eb;
+  }
+
+  /* Responsive Design */
+
+  /* For tablets and small screens */
+  
+@media (max-width: 768px) {
+    
+    .balance-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #transaction-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #transaction-list li button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+ /* For mobile devices */
+
+@media (max-width: 480px) {
+   
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .balance-section, .form-section, .transactions-section {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #transaction-list li {
+        padding: 8px;
+    }
+
+    #transaction-list li button {
+        padding: 8px;
+        width: 100%;
+    }
+}
+
