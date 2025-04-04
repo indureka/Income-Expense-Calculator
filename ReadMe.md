@@ -23,6 +23,7 @@ This is a simple Income and Expense Calculator built with **HTML**, **CSS**, and
 3. Use the form to add income or expense entries.
 4. The transactions are saved and displayed dynamically.
 
+
 ## Technologies Used
 
 - HTML
